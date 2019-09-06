@@ -1,8 +1,8 @@
 all:
-	flex test.l
+	flex vampire.l
 	gcc -lfl lex.yy.c
 
 run:
-	flex test.l
+	flex vampire.l
 	gcc -lfl lex.yy.c
 	./a.out

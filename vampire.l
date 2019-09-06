@@ -6,6 +6,8 @@
 \n	ECHO;
 
 <Normal>{
+	"$$"	printf("bluh");
+	"$"	printf("bluh");
 	.	;
 }
 
