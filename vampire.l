@@ -1,28 +1,29 @@
 %s Normal Math Inner InnerMath
 
 %%
-	BEGIN Math;
+	BEGIN Normal;
 
 \n	ECHO;
 
 <Normal>{
-	"$$"		printf("bluh");
-	"$"		printf("bluh.");
+	"$$"		BEGIN Math;
+	"$"		BEGIN Math;
 	"\\$"		;
-	"\\("		printf("bluh?");
-	"\\["		printf("bluh,");
+	"\\("		BEGIN Math;
+	"\\["		BEGIN Math;
 	"\\\\"		;
-	"\\begin"	printf("bluh!");
-	.		;
+	"\\begin"	BEGIN Math;
+	.		printf("𝖇𝖑𝖊𝖍");
 }
 
 <Math>{
-	"$$"		printf("bleh");
-	"$"		printf("bleh.");
+	"$$"		BEGIN Normal;
+	"$"		BEGIN Normal;
 	"\\$"		ECHO;
-	"\\)"		printf("bleh?");
-	"\\]"		printf("bleh,");
+	"\\)"		BEGIN Normal;
+	"\\]"		BEGIN Normal;
 	"\\\\"		ECHO;
-	"\\end"		printf("𝖇𝖑𝖊𝖍");	
+	"\\end"		BEGIN Normal;	
+	.		ECHO;
 }
 %%
