@@ -6,9 +6,14 @@
 \n	ECHO;
 
 <Normal>{
-	"$$"	printf("bluh");
-	"$"	printf("bluh");
-	.	;
+	"$$"		printf("bluh");
+	"$"		printf("bluh.");
+	"\\$"		;
+	"\\("		printf("bluh?");
+	"\\["		printf("bluh,");
+	"\\\\"		;
+	"\\begin"	printf("bluh!");
+	.		;
 }
 
 %%
