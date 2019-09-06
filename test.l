@@ -1,9 +1,10 @@
-%Start Normal Math Inner InnerMath
+%s Normal Math Inner InnerMath
 
 %%
 	BEGIN Normal;
 
-<Normal>\n	ECHO;
+\n	ECHO;
+
 <Normal>.	;
 
 %%
