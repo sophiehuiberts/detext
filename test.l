@@ -5,6 +5,8 @@
 
 \n	ECHO;
 
-<Normal>.	;
+<Normal>{
+	.	;
+}
 
 %%
