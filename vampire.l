@@ -1,7 +1,7 @@
 %s Normal Math Inner InnerMath
 
 %%
-	BEGIN Normal;
+	BEGIN Math;
 
 \n	ECHO;
 
@@ -16,4 +16,13 @@
 	.		;
 }
 
+<Math>{
+	"$$"		printf("bleh");
+	"$"		printf("bleh.");
+	"\\$"		ECHO;
+	"\\)"		printf("bleh?");
+	"\\]"		printf("bleh,");
+	"\\\\"		ECHO;
+	"\\end"		printf("𝖇𝖑𝖊𝖍");	
+}
 %%
