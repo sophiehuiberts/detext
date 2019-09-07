@@ -1,8 +1,8 @@
 all:
-	flex vampire.l
+	flex detext.l
 	gcc -lfl lex.yy.c
 
 run:
-	flex vampire.l
-	gcc -lfl lex.yy.c
-	./a.out
+	flex detext.l
+	gcc -lfl -odetext lex.yy.c
+	./detext
