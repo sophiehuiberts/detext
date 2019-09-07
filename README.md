@@ -9,7 +9,7 @@ that would be set in math mode. Newlines are preserved.
 Usage: `cat main.tex | detext | grep -n <regex here>`
 
 Now that the `-n` flag makes `grep` output line numbers for all matches. The resulting line numbers will equal the
-corresponding line numbers in the input file. If you want to find all instances of the variable called `a`, you could use the regex `[^a-z]a[^a-z]`.
+corresponding line numbers in the input file. If you want to find all instances of the variable called `a`, you could use the regex `[^a-z\\]a[^a-z]`.
 
 
 Supports the following commands and environments for entering and leaving math mode, including `*`-ed versions.
